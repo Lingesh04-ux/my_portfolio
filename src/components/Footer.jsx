@@ -17,13 +17,17 @@ function Footer() {
   const { scrollToService } = useContext(ScrollContext);
   const { scrollToExperience } = useContext(ScrollContext);
 
+  const handleRedirect = () => {
+    window.location.href = "https://airtable.com/appRWrUCL5wzrGZ2N/pagvY75CuHtUdnQzZ/form";
+  }
+
   return (
     <div className="main-footer" ref={footerRef}>
       <div className="main-footer-1">
 
           <div className="footer-title">
             <p className='footer-title-1'>Then ? Let's Connect</p>
-            <button className='contactus-btn' >Contact us</button>
+            <button className='contactus-btn' onClick={handleRedirect}>Contact us</button>
           </div>
         <div className="footer-title-cover">
           <hr className='line-tag-1'/>
